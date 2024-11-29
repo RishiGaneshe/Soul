@@ -12,19 +12,6 @@ exports.sequelize= new Sequelize('project87' , 'admin', 'your_password',{  // 1s
 })
 
 
-exports.connectToMongoDB=async (mongoURL)=>{
-    return mongoose.connect(mongoURL);    
-}
-
-
-exports.redisClient = async (redisURL)=>{
-  try{
-      const client= await new Redis(redisURL);
-      return client;
-  }catch(err){
-      console.log("Error in Redis Service: ", err)
-  }
-}
 
 
 
