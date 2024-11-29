@@ -10,8 +10,8 @@ const PORT= 6000
 const mongoURL= 'mongodb://localhost:27017/Soul'
 const redisURL='redis://172.22.138.48:6379'
 
-connectToMongoDB(mongoURL).then(()=>{console.log("mongoDB connected")}) 
-redisClient(redisURL).then(()=>{console.log("Redis connected")}) ;
+// connectToMongoDB(mongoURL).then(()=>{console.log("mongoDB connected")}) 
+// redisClient(redisURL).then(()=>{console.log("Redis connected")}) ;
 
 async function connectDatabase(){
     try{
