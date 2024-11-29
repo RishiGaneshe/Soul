@@ -57,7 +57,7 @@ exports.handleGetSchoolDistance= async (req, res)=>{
       return res.status(200).json({ nearbySchools: schoolsWithDistance });
 
   }catch(err){
-      console.error('Error fetching schools or calculating distances:', err);
+      console.log('Error fetching schools or calculating distances:', err);
       return res.status(500).json({ error: 'Internal server error' });
   }
 }
